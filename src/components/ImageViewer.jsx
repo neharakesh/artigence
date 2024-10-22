@@ -16,12 +16,12 @@ const ImageViewer = () => {
       >
         {({ zoomIn, zoomOut, resetTransform, centerView }) => (
           <React.Fragment>
-            {/* Move Tools to the Bottom or Left to Avoid HubView */}
-            <div className="absolute bottom-4 left-4 bg-white p-2 shadow-lg rounded flex space-x-2">
-              <button onClick={zoomIn} className="px-3 py-1 bg-blue-500 text-white rounded">Zoom In</button>
-              <button onClick={zoomOut} className="px-3 py-1 bg-blue-500 text-white rounded">Zoom Out</button>
-              <button onClick={resetTransform} className="px-3 py-1 bg-gray-500 text-white rounded">Reset</button>
-              <button onClick={centerView} className="px-3 py-1 bg-gray-500 text-white rounded">Center</button>
+            {/* Tools Positioned in Right Corner */}
+            <div className="absolute top-4 right-4 bg-white p-2 shadow-lg rounded flex flex-col space-y-2 z-10">
+              <button onClick={() => zoomIn()} className="px-3 py-1 bg-blue-500 text-white rounded">Zoom In</button>
+              <button onClick={() => zoomOut()} className="px-3 py-1 bg-blue-500 text-white rounded">Zoom Out</button>
+              <button onClick={() => resetTransform()} className="px-3 py-1 bg-gray-500 text-white rounded">Reset</button>
+              <button onClick={() => centerView()} className="px-3 py-1 bg-gray-500 text-white rounded">Center</button>
             </div>
 
             {/* Image Viewer Section */}
@@ -36,6 +36,7 @@ const ImageViewer = () => {
 };
 
 export default ImageViewer;
+
 
 
 
