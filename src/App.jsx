@@ -17,12 +17,12 @@ const App = () => {
       {/* Navbar */}
       <Navbar />
 
-      <div className="flex flex-grow pt-16"> {/* pt-16 offsets the fixed navbar height */}
+      <div className="flex flex-grow pt-16 bg-gray-950"> {/* pt-16 offsets the fixed navbar height */}
         {/* Details Panel */}
         <DetailsPanel details={sampleDetails} />
 
         {/* Whole Slide Image Viewer */}
-        <div className="w-3/4 h-[calc(100vh-64px)] mt-"> {/* Adjust height to account for the navbar */}
+        <div className="w-3/4 h-[calc(100vh-64px)]  m-4 "> {/* Adjust height to account for the navbar */}
           <ImageViewer />
         </div>
       <HubView/>

@@ -2,42 +2,42 @@ import { FaBook, FaClipboard, FaCalendar, FaHeartbeat } from 'react-icons/fa'; /
 
 const DetailsPanel = ({ details }) => {
   return (
-    <div className="details-panel w-1/4 bg-gray-100 p-6 rounded-lg shadow-lg h-full">
-      <h2 className="text-2xl font-bold text-blue-600 mb-4 border-b-2 border-blue-500 pb-2">Findings</h2>
+    <div className="details-panel w-1/4 p-6 rounded-lg shadow-lg h-full">
+      <h2 className="text-2xl font-bold text-white mb-4 border-b-2 border-white pb-2">Findings</h2>
       
       <div className="mb-4">
-        <h3 className="text-lg font-semibold flex items-center">
-          <FaBook className="mr-2 text-blue-500" /> Title:
+        <h3 className="text-lg font-semibold flex items-center text-white">
+          <FaBook className="mr-2 text-white" /> Title:
         </h3>
-        <p className="text-gray-700">{details.title}</p>
+        <p className="text-gray-300">{details.title}</p>
       </div>
       
       <div className="mb-4">
-        <h3 className="text-lg font-semibold flex items-center">
-          <FaClipboard className="mr-2 text-blue-500" /> Description:
+        <h3 className="text-lg font-semibold flex items-center text-white">
+          <FaClipboard className="mr-2 text-white" /> Description:
         </h3>
-        <p className="text-gray-700">{details.description}</p>
+        <p className="text-gray-300">{details.description}</p>
       </div>
 
       <div className="mb-4">
-        <h3 className="text-lg font-semibold flex items-center">
-          <FaHeartbeat className="mr-2 text-blue-500" /> Diagnosis:
+        <h3 className="text-lg font-semibold flex items-center text-white">
+          <FaHeartbeat className="mr-2 text-white" /> Diagnosis:
         </h3>
-        <p className="text-gray-700">{details.diagnosis}</p>
+        <p className="text-gray-300">{details.diagnosis}</p>
       </div>
 
       <div className="mb-4">
-        <h3 className="text-lg font-semibold flex items-center">
-          <FaCalendar className="mr-2 text-blue-500" /> Date:
+        <h3 className="text-lg font-semibold flex items-center text-white">
+          <FaCalendar className="mr-2 text-white" /> Date:
         </h3>
-        <p className="text-gray-700">{details.date}</p>
+        <p className="text-gray-300">{details.date}</p>
       </div>
 
       <div>
-        <h3 className="text-lg font-semibold flex items-center">
-          <FaClipboard className="mr-2 text-blue-500" /> Recommendations:
+        <h3 className="text-lg font-semibold flex items-center text-white">
+          <FaClipboard className="mr-2 text-white" /> Recommendations:
         </h3>
-        <p className="text-gray-700">{details.recommendations}</p>
+        <p className="text-gray-300">{details.recommendations}</p>
       </div>
     </div>
   );
