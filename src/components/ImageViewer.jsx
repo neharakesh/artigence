@@ -4,7 +4,7 @@ import wsi from "../../public/images/wsi.png"; // Your whole slide image
 
 const ImageViewer = () => {
   return (
-    <div className="relative h-full w-full ">
+    <div className="relative h-full w-full">
       <TransformWrapper
         initialScale={1}
         initialPositionX={0}
