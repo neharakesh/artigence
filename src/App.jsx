@@ -22,7 +22,7 @@ const App = () => {
         <DetailsPanel details={sampleDetails} />
 
         {/* Whole Slide Image Viewer */}
-        <div className="w-3/4 h-[calc(100vh-64px)]  m-4 "> {/* Adjust height to account for the navbar */}
+      <div className="relative w-3/4  p-6 bg-gray-300 shadow-md rounded-lg mb-0">
           <ImageViewer />
         </div>
       <HubView/>

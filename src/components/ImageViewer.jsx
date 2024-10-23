@@ -4,7 +4,7 @@ import wsi from "../../public/images/wsi.png"; // Your whole slide image
 
 const ImageViewer = () => {
   return (
-    <div className="relative h-full w-full rounded-xl">
+    <div className="relative h-full w-full ">
       <TransformWrapper
         initialScale={1}
         initialPositionX={0}
@@ -26,7 +26,7 @@ const ImageViewer = () => {
 
             {/* Image Viewer Section */}
             <TransformComponent>
-              <img src={wsi} alt="Whole Slide Image" className="object-contain h-full w-full" />
+              <img src={wsi} alt="Whole Slide Image" className="h-full  w-full" />
             </TransformComponent>
           </React.Fragment>
         )}
